@@ -37,6 +37,7 @@
         <item>Culture</item>
         <item>Parties and Shows</item>
         <item>Culinary</item>
+        <item>Shopping</item>
     </string-array>
     <string name="title_activity_main">MainActivity</string>
 
