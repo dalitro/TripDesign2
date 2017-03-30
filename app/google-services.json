@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "386341541141",
+    "firebase_url": "https://tripdesign-b3297.firebaseio.com",
+    "project_id": "tripdesign-b3297",
+    "storage_bucket": "tripdesign-b3297.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:386341541141:android:3154ac5adc946ea7",
+        "android_client_info": {
+          "package_name": "com.example.eladj.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "386341541141-nbpe6djs3ietscb8vemremejk3t0desj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.eladj.myapplication",
+            "certificate_hash": "8490a517a3e534bd08890199913516be90f3ebb2"
+          }
+        },
+        {
+          "client_id": "386341541141-kaidqai4ekav1m21o0dek2qnpen8bkdc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAwJwZj-C6ARLhjLX5eKFjfg3GK54zNbM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "386341541141-kaidqai4ekav1m21o0dek2qnpen8bkdc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
