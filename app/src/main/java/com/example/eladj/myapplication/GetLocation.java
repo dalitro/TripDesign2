@@ -14,7 +14,9 @@ public class GetLocation extends Activity {
     final String networkLocationProvider = LocationManager.NETWORK_PROVIDER;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate (Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
         textView_GpsLocation = (TextView) findViewById(R.id.textgpslocation);
         textView_NetworkLocation = (TextView) findViewById(R.id.textnetworklocation);
         textView_MyLocation = (TextView) findViewById(R.id.textmylocation);
