@@ -12,6 +12,7 @@ import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class ListViewMultipleSelectionActivity extends Activity implements OnClickListener {
 
@@ -27,9 +28,9 @@ public class ListViewMultipleSelectionActivity extends Activity implements OnCli
 
         findViewsById();
 
-        String[] sports = getResources().getStringArray(R.array.AbroadActivities);
+        String[] activities = getResources().getStringArray(R.array.AbroadActivities);
         adapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_multiple_choice, sports);
+                android.R.layout.simple_list_item_multiple_choice, activities);
         listView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
         listView.setAdapter(adapter);
 
@@ -47,28 +48,33 @@ public class ListViewMultipleSelectionActivity extends Activity implements OnCli
         for (int i = 0; i < checked.size(); i++) {
             // Item position in adapter
             int position = checked.keyAt(i);
-            // Add sport if it is checked i.e.) == TRUE!
+            // Add activities if it is checked i.e.) == TRUE!
             if (checked.valueAt(i))
                 selectedItems.add(adapter.getItem(position));
         }
-
-        String[] outputStrArr = new String[selectedItems.size()];
-
-        for (int i = 0; i < selectedItems.size(); i++) {
-            outputStrArr[i] = selectedItems.get(i);
+        if(selectedItems.size() > 3){
+            Toast.makeText(ListViewMultipleSelectionActivity.this, "Please choose up to 3 activities from the list",
+                    Toast.LENGTH_SHORT).show();
         }
+        else {
+            String[] outputStrArr = new String[selectedItems.size()];
+
+            for (int i = 0; i < selectedItems.size(); i++) {
+                outputStrArr[i] = selectedItems.get(i);
+            }
 
 //        Intent intent = new Intent(getApplicationContext(),
 //                ResultActivity.class);
 
-        // Create a bundle object
-        Bundle b = new Bundle();
-        b.putStringArray("selectedItems", outputStrArr);
+            // Create a bundle object
+            Bundle b = new Bundle();
+            b.putStringArray("selectedItems", outputStrArr);
 
-        // Add the bundle to the intent.
-        //intent.putExtras(b);
+            // Add the bundle to the intent.
+            //intent.putExtras(b);
 
-        // start the ResultActivity
-        //startActivity(intent);
+            // start the ResultActivity
+            //startActivity(intent);
+        }
     }
 }
