@@ -29,4 +29,13 @@
     <string name="lbl_forgot_password">Forgot password?</string>
     <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
 
+    <string name="MultipleSelectionActivity">Select the desired activities</string>
+    <string name="submit">Submit</string>
+    <string-array name="AbroadActivities">
+        <item>Extreme Activities</item>
+        <item>Chill</item>
+        <item>Culture</item>
+        <item>Parties and Shows</item>
+        <item>Culinary</item>
+    </string-array>
 </resources>
