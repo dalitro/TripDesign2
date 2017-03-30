@@ -12,6 +12,7 @@ import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class ListViewMultipleSelectionActivity extends Activity implements OnClickListener {
@@ -25,7 +26,6 @@ public class ListViewMultipleSelectionActivity extends Activity implements OnCli
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_view_multiple_selection);
-
         findViewsById();
 
         String[] activities = getResources().getStringArray(R.array.AbroadActivities);
