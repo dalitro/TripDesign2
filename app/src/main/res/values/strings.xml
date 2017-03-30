@@ -32,12 +32,11 @@
     <string name="title_multi_selection">Select the desired activities</string>
     <string name="submit">Submit</string>
     <string-array name="AbroadActivities">
-        <item>Extreme</item>
-        <item>Chill</item>
-        <item>Culture</item>
-        <item>Parties and Shows</item>
-        <item>Culinary</item>
-        <item>Shopping</item>
+        <item>Basketball</item>
+        <item>Cycling</item>
+        <item>Running</item>
+        <item>Football</item>
+        <item>Soccer</item>
     </string-array>
     <string name="title_activity_main">MainActivity</string>
 
